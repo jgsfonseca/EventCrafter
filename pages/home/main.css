@@ -1,0 +1,610 @@
+/* Geral */
+/* Estilos gerais */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #FF8E8E;
+    color: white;
+}
+
+.navbar-brand img {
+    margin-top: 5px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+}
+
+/* Flexbox para posicionar os quadrados lado a lado */
+.container-squars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os quadrados */
+    margin-top: 50px;
+}
+
+
+
+
+/* Estilos para as seções */
+.sectionsquars {
+    margin: 30px;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sectionsquars h2,
+.sectionsquars p,
+.sectionsquars h6 {
+    margin-left: 20px;
+}
+
+/* Estilos para o rodapé */
+.fundo {
+    background-color: #FF8E8E;
+    height: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+/* Estilos para o conteúdo principal */
+.centro-ajuda {
+    background-color: white;
+    padding: 50px;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome-ca {
+    margin-top: 30px;
+}
+
+
+
+.sectionsquars {
+    margin: 30px;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.fundo {
+    background-color: #FF8E8E;
+    height: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+/* Estilos para as seções */
+.sectionsquars {
+    margin: 30px;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sectionsquars h2,
+.sectionsquars p,
+.sectionsquars h6 {
+    margin-left: 20px;
+}
+
+/* Estilos para o rodapé */
+.fundo {
+    background-color: #FF8E8E;
+    height: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+/* Estilos específicos para diferentes seções */
+.centro-ajuda h3 {
+    font-size: 36px;
+}
+
+
+
+.sectionsquars h2, .sectionsquars p, .sectionsquars h6 {
+    margin-left: 20px;
+}
+
+/* Estilos para links e botões */
+.btn {
+    background-color: #FF8E8E;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FF6F6F;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html, body {
+    height: 100%;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p, li {
+    color: #333;
+}
+
+/* Sing In */
+.form-container {
+    max-width: 400px;
+    padding: 1rem;
+}
+
+.bremember {
+    background: transparent;
+    border: none;
+    margin-top: 2px;
+}
+
+/*NavBar*/
+header, .navbar {
+    background-color: #FF8E8E;
+}
+
+#nav-container {
+    padding-top: 5;
+    padding-bottom: 5;
+}
+
+section {
+    padding: 70px;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(../../pages/home/imagemExemplo.jpg);
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-text h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: whitesmoke;
+}
+
+.home-text h1 {
+    font-size: 80;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #ffffffab;
+}
+
+.home-text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffffab;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 35px;
+    background-color: #FF8E8E;
+    color: #ffffffab;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .5s ease;
+    cursor: pointerx;
+}
+
+.section-meuseventos {
+    background-color: #f8f9fa;
+    padding: 10px 0; /* Reduzir padding para diminuir o tamanho */
+    margin-top: -50px; /* Reduzir margem superior para aproximar da NavBar */
+}
+
+.section-meuseventos h1 {
+    font-size: 40px; /* Ajuste de tamanho se necessário */
+    margin-top: 0;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #FF8E8E;
+}
+
+.section-meuseventos .btn {
+    margin: 0;
+}
+
+.section-meuseventos a {
+    margin-top: 10px; /* Ajuste de margem para o botão */
+    margin-bottom: 0;
+    position: relative;
+}
+.section-meuseventos .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-content {
+    background-color: #f8f9fa; /* Fundo cinza */
+    padding: 20px;
+    align-items: center;
+}
+
+.section-listas {
+    background-color: #9999;
+    padding: 20px;
+    align-items: center;
+}
+
+.section-listas a {
+    color: aliceblue;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    cursor: pointer;
+    background-color: #FF8E8E;
+    padding: 8px 15px;
+    border: 1px solid gray;
+}
+
+ol li:hover {
+    opacity: 0,8;
+}
+
+p {
+    margin: 4px 0;
+}
+
+button.fab {
+    width: 54px;
+    height: 54px;
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    box-shadow: 2px 2px 2px #FF8E8E;
+    bottom: 50px; /* Ajuste de posição */
+    right: 20px; /* Ajuste de posição */
+    position: fixed;
+}
+
+.card-title-img {
+    max-width: 100%;
+}
+.card{
+    height: 500px;
+}
+.card-botao {
+    border: 0px;
+    background-color: #FF8E8E;
+    margin-top: 15px;
+    border-radius: 3px;
+    
+}
+
+/* Geral */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #FF8E8E;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    margin-top: 5px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #ffd7d1 !important;
+}
+
+.square {
+    width: 220px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.square:hover {
+    background-color: #ffe9e6;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.square h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para as seções */
+.sectionsquars {
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sectionsquars h2 {
+    margin-left: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.sectionsquars p, .sectionsquars h6 {
+    margin-left: 0;
+    color: #666;
+}
+
+/* Estilos para o conteúdo principal */
+.centro-ajuda {
+    background-color: #fff;
+    padding: 50px;
+    color: #333;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-ca {
+    margin-top: 30px;
+}
+
+.welcome-ca h3 {
+    font-size: 36px;
+    color: #FF8E8E;
+}
+
+h4 {
+    margin-top: 40px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Estilos para o rodapé */
+.fundo {
+    background-color: #FF8E8E;
+    height: 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+/* Estilos para links e botões */
+.btn {
+    background-color: #FF8E8E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FF8E8E;
+}
+
+a {
+    color: #FF8E8E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes adicionais */
+.section-meuseventos {
+    background-color: #fff;
+    padding: 10px 0;
+    margin-top: -50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-meuseventos h1 {
+    font-size: 40px;
+    margin-top: 0;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #FF8E8E;
+}
+
+.section-meuseventos .btn {
+    margin: 0;
+}
+
+.section-meuseventos a {
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.section-meuseventos .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-content {
+    background-color: #f8f9fa;
+    padding: 20px;
+    align-items: center;
+}
+
+.section-listas {
+    background-color: #999;
+    padding: 20px;
+    align-items: center;
+}
+
+.section-listas a {
+    color: #fff;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    cursor: pointer;
+    background-color: #FF8E8E;
+    padding: 8px 15px;
+    border: 1px solid gray;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+ol li:hover {
+    background-color: #FF8E8E;
+    opacity: 0.9;
+}
+
+p {
+    margin: 4px 0;
+}
+
+button.fab {
+    width: 54px;
+    height: 54px;
+    border: none;
+    border-radius: 50px;
+    font-size: 24px;
+    box-shadow: 2px 2px 2px #FF8E8E;
+    bottom: 50px;
+    right: 20px;
+    position: fixed;
+}
+
+.card-title-img {
+    max-width: 100%;
+}
+
+.card {
+    height: 500px;
+}
+
+.card-botao {
+    border: 0;
+    background-color: #FF8E8E;
+    margin-top: 15px;
+    border-radius: 3px;
+    color: white;
+}
+
+
+.card-account {
+    margin-top: -100px;
+    margin-bottom: 150px ;
+}
+
+.card-account h1{
+    font-size: 60px;
+    font-weight: 800px;
+    line-height: 0.5;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.card-account-info {
+    background-color: #FF8E8E;
+    margin-top: -75px;
+    position: absolute;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 10%;
+    border-radius: 10px;
+
+}
+
+.card-account-info h3 {  
+    margin: 25px;
+    font-size: 40px;
+    font-weight: 500px;
+    line-height: 0.5;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.card-account-info p {
+    margin: 20px;
+}
+
+.card-account-info button{
+    position: relative;
+    margin-left: 80%;
+    margin-bottom: 10px;
+}

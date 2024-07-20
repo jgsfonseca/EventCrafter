@@ -1,0 +1,396 @@
+body {
+    background: #FDECEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #FDECEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 0 20px #FF8E8E;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-section {
+    background: url('/mnt/data/image.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.branding {
+    text-align: center;
+}
+
+.branding .logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.branding h2 {
+    margin-bottom: 10px;
+}
+
+.branding p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.right-section {
+    padding: 40px;
+    width: 60%;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #FF8E8E;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button.solid {
+    background: #FF8E8E;
+    color: white;
+}
+
+button.clear {
+    background: none;
+    border: 2px solid #FF8E8E;
+    color: #FF8E8E;
+}
+
+button.clear:hover {
+    background: #FF8E8E;
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 0 20px #FF8E8E;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-section {
+    background: url('/mnt/data/image.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.social-links-tab {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links-tab h3 {
+    margin-bottom: 10px;
+}
+
+.social-links-tab a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    background: #FF7A7A;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 1s;
+}
+
+.social-links-tab a:hover {
+    background: #FF6A6A;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.right-section {
+    padding: 40px;
+    width: 60%;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #FF8E8E;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button.forgot-password {
+    background: none;
+    color: #FF8E8E;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+button.sign-in {
+    background: #FF8E8E;
+    color: white;
+}
+
+.alternative-logins {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.outline {
+    background: none;
+    border: 2px solid #FF8E8E;
+    color: #FF8E8E;
+}
+
+button.outline:hover {
+    background: #FF8E8E;
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+body {
+    background: #FDECEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 0 20px #FF8E8E;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-section {
+    background: url('/mnt/data/image.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.social-links-tab {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links-tab h3 {
+    margin-bottom: 10px;
+}
+
+.social-links-tab a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    background: #FF7A7A;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 1s;
+}
+
+.social-links-tab a:hover {
+    background: #FF6A6A;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.right-section {
+    padding: 40px;
+    width: 60%;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #FF8E8E;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button.forgot-password {
+    background: none;
+    color: #FF8E8E;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+button.sign-in {
+    background: #FF8E8E;
+    color: white;
+}
+
+.alternative-logins {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.outline {
+    background: none;
+    border: 2px solid #FF8E8E;
+    color: #FF8E8E;
+}
+
+button.outline:hover {
+    background: #FF8E8E;
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}

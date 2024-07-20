@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "firebase": "^10.12.2",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.7.1"
+  },
+  "name": "teste",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

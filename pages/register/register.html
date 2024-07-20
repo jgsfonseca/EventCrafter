@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../global.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="branding">
+                <img src="/pages/home/eventcrafterLogo.png" alt="Logo" class="logo">
+                <h2>Seja Bem Vindo!</h2>
+                <p>Crie sua conta para começar a a criar o seu evento de forma simples e eficiente!</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <form>
+                <h2>Criar Conta</h2>
+                <div class="form-field">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Nome" required/>
+                </div>
+                <div class="form-field">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" placeholder="Telefone" required/>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email" onchange="onChangeEmail()" required/>
+                    <div class="error" id="email-required-error">Email é obrigatório</div>
+                    <div class="error" id="email-invalid-error">Email é inválido</div>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" onchange="onChangePassword()" required/>
+                    <div class="error" id="password-required-error">Password é obrigatória</div>
+                    <div class="error" id="password-min-length-error">Password deve ter pelo menos 6 caracteres</div>
+                </div>
+                <div class="form-field">
+                    <label for="confirmPassword">Confirmar Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirmar Password" onchange="onChangeConfirmPassword()" required/>
+                    <div class="error" id="password-doesnt-match-error">Password e Confirmar Password devem ser iguais</div>
+                </div>
+                <button type="button" class="solid" disabled="true" onclick="register()" id="register-button">Criar Conta</button>
+                <button type="button" class="clear" onclick="redirectToLogin()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+        import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAy30zzz4XkaIqKoeFYHD8gCdOV1nfm7Ik",
+            authDomain: "eventcrafter-projetofinal.firebaseapp.com",
+            projectId: "eventcrafter-projetofinal",
+            storageBucket: "eventcrafter-projetofinal.appspot.com",
+            messagingSenderId: "653081750350",
+            appId: "1:653081750350:web:a7a7797df46a64abf94c1f"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        window.register = async function() {
+            const email = form.email().value;
+            const password = form.password().value;
+            const name = form.name().value;
+            const phone = form.phone().value;
+
+            try {
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+
+                await setDoc(doc(db, 'users', user.uid), {
+                    name: name,
+                    phone: phone,
+                    email: user.email,
+                });
+
+                alert("Conta criada com sucesso.");
+                window.location.href = "../../../index.html";
+            } catch (error) {
+                alert(getErrorMessage(error));
+            }
+        }
+
+        window.redirectToLogin = function() {
+            window.location.href = "../../../index.html";
+        }
+    </script>
+
+    <script src="register.js"></script>
+    <script src="../../validations.js"></script>
+    <script src="../../loading.js"></script>
+</body>
+</html>

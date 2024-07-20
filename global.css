@@ -1,0 +1,161 @@
+button {
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+button[disabled] {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+
+body {
+    background: #F5F7FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    background: #2D3A54;
+    color: white;
+    padding: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.branding {
+    text-align: center;
+}
+
+.branding .logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.branding h2 {
+    margin-bottom: 10px;
+}
+
+.branding p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.right-section {
+    padding: 40px;
+    width: 60%;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #2D3A54;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button.forgot-password {
+    background: none;
+    color: #2D3A54;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+button.sign-in {
+    background: #2D3A54;
+    color: white;
+}
+
+.alternative-logins {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.google-login,
+button.linkedin-login {
+    width: 48%;
+    background: #DDD;
+    color: #2D3A54;
+}
+
+button.google-login {
+    background: #4285F4;
+    color: white;
+}
+
+button.linkedin-login {
+    background: #0077B5;
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}

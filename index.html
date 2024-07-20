@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>EventCrafter Login</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="branding">
+                <img src="/pages/home/eventcrafterLogo.png" alt="Logo" class="logo">
+                <h2>Seja Bem Vindo!</h2>
+                <p>Bem vindo ao EventCrafter, aproveite a nossa ferramenta e construa um evento de forma eficiente!</p>
+            </div>
+            <div class="social-links-tab">
+                <h3>Contacte-nos</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="footer">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="right-section">
+            <form>
+                <h2>Bem Vindo ao EventCrafter</h2>
+                <div class="form-field">
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" placeholder="Email" onchange="onChangeEmail()"/>
+                    <div class="error" id="email-required-error">Email é obrigatório</div>
+                    <div class="error" id="email-invalid-error">Email é inválido</div>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" onchange="onChangePassword()"/>
+                    <div class="error" id="password-required-error">Password é obrigatória</div>
+                </div>
+                <button type="button" class="forgot-password" id="recover-password-button" disabled="true" onclick="recoverPassword()">Recuperar Password</button>
+                <button type="button" class="sign-in" id="login-button" disabled="true" onclick="login()">Sign In</button>
+                <div class="alternative-logins">
+                    <button type="button" class="outline" onclick="register()">Registar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+        import { getFirestore, collection, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAy30zzz4XkaIqKoeFYHD8gCdOV1nfm7Ik",
+            authDomain: "eventcrafter-projetofinal.firebaseapp.com",
+            projectId: "eventcrafter-projetofinal",
+            storageBucket: "eventcrafter-projetofinal",
+            messagingSenderId: "653081750350",
+            appId: "1:653081750350:web:a7a7797df46a64abf94c1f"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        window.firebaseAuth = auth;
+        window.firebaseSignInWithEmailAndPassword = signInWithEmailAndPassword;
+        window.firebaseSendPasswordResetEmail = sendPasswordResetEmail;
+        window.firebaseFirestore = db;
+        window.firebaseCollection = collection;
+        window.firebaseDoc = doc;
+        window.firebaseGetDoc = getDoc;
+    </script>
+
+    <script src="index.js"></script>
+    <script src="validations.js"></script>
+</body>
+</html>
+
+
+<!--
+<!doctype html>
+<html>
+
+<head>
+    <title>EventCrafter Login</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="branding">
+                <img src="/pages/home/eventcrafterLogo.png" alt="Logo" class="logo">
+                <h2>Seja Bem Vindo!</h2>
+                <p>Bem vindo ao EventCrafter, aproveite a nossa ferramenta e construa um evento de forma eficiente!</p>
+            </div>
+            <div class="social-links-tab">
+                <h3>Contacte-nos</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="footer">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="right-section">
+            <form>
+                <h2>Bem Vindo ao EventCrafter</h2>
+                <div class="form-field">
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email" placeholder="Email" onchange="onChangeEmail()"/>
+                    <div class="error" id="email-required-error">Email é obrigatório</div>
+                    <div class="error" id="email-invalid-error">Email é inválido</div>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" onchange="onChangePassword()"/>
+                    <div class="error" id="password-required-error">Password é obrigatória</div>
+                </div>
+                <button type="button" class="forgot-password" id="recover-password-button" disabled="true" onclick="recoverPassword()">Recuperar Password</button>
+                <button type="button" class="sign-in" id="login-button" disabled="true" onclick="login()">Sign In</button>
+                <div class="alternative-logins">
+                    <button type="button" class="outline" onclick="register()">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAy30zzz4XkaIqKoeFYHD8gCdOV1nfm7Ik",
+            authDomain: "eventcrafter-projetofinal.firebaseapp.com",
+            projectId: "eventcrafter-projetofinal",
+            storageBucket: "eventcrafter-projetofinal",
+            messagingSenderId: "653081750350",
+            appId: "1:653081750350:web:a7a7797df46a64abf94c1f"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        window.firebaseAuth = auth;
+        window.firebaseSignInWithEmailAndPassword = signInWithEmailAndPassword;
+        window.firebaseSendPasswordResetEmail = sendPasswordResetEmail;
+    </script>
+
+    <script src="index.js"></script>
+    <script src="validations.js"></script>
+</body>
+</html>
+
+-->
+
+
